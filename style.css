@@ -1,0 +1,134 @@
+/* General Shit */
+
+body {
+    background: #ffffff;
+    color: #000;
+    font-family: Arial;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: auto;
+    padding: 1em;
+  }
+
+  h1{
+   /* text-align: center;*/
+    font-size: 8em;
+    position:fixed; 
+    bottom:0; 
+    right: 0;
+    transform: translate(40%, -10%);
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    /*color: black;*/
+ -webkit-text-stroke-width: 3px; 
+  /*  -webkit-text-stroke-color:#ffffff;  */
+  -webkit-text-stroke-color: black; 
+ color:#ffffffee;
+   
+  }
+
+  p{
+    font-size: 1em;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px) 400px;
+    grid-template-rows: repeat(4, 100px)
+  }
+  
+  .image-block {
+   grid-column: 1 / 5; 
+    grid-row: 1 / 5;  
+    background: url('photos/eileenchang.png')100%/ cover;
+  }
+  
+  .intro-heading {
+    background: linear-gradient(to right,#ffffff 400px,#000 0);
+    width: 1000px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: flex;
+    align-items: center;
+  }
+
+
+
+    
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+
+  .column .container {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  /*
+  :root {
+    --size: 450px;
+ 
+  }
+  
+  
+  .container {
+    position: relative;
+  }
+  
+  .divider {
+    height: 100px;
+  }
+  
+  .title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+  }
+  
+  img {
+    width: var(--size);
+    height: auto;
+  }
+  
+  .left {
+    color: rgb(169, 169, 169);
+    clip-path: polygon(0 0, var(--size) 0, var(--size) var(--size), 0 var(--size));
+  }
+  
+  .right {
+    color: rgb(0, 0, 0);
+    clip-path: polygon(var(--size) 0, 100% 0, 100% 100%, 0 100%, 0 var(--size), var(--size) var(--size));
+  }
+  
+  .container-reverse img {
+    float: right;
+  }
+  
+  .container-reverse .left {
+    clip-path: polygon(100% 0, 100% var(--size), calc(100% - var(--size)) var(--size), calc(100% - var(--size)) 0);
+  }
+  
+  .container-reverse .right {
+    clip-path: polygon(0 0, calc(100% - var(--size)) 0, calc(100% - var(--size)) var(--size), 100% var(--size), 100% 100%, 0 100%);
+  }
+  
+  .container-reverse h1 {
+    text-align: right;
+  }
+
+  */
